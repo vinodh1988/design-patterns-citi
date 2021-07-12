@@ -1,0 +1,12 @@
+package com.subsystem;
+
+public class TaskFactory {
+    public static Activity getInstance(String task) {
+    	switch(task) {
+    	   default:
+    		     return null;
+    	   case "build":
+    		      return new Building();
+    	}
+    }
+}

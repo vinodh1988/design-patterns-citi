@@ -1,0 +1,7 @@
+package com.subsystem2;
+
+public class MediaPlayer{
+	public static play(String name) {
+		System.out.println("Playing "+name);
+	}
+}

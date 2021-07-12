@@ -1,0 +1,5 @@
+package com.subsystem;
+
+public interface Task {
+   public void doIt(String process);
+}

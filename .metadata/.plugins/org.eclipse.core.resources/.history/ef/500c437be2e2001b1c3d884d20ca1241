@@ -1,0 +1,7 @@
+package com.current.project;
+
+public class ActivityRunner {
+   public static void main(String[] args) {
+	
+    }
+}

@@ -11,15 +11,5 @@ public class ActivityRunner {
 	   TaskFacade.facade("build", "Node JS Project");
 	   TaskFacade.facade("build", "Android Project");
 	   
-	   TaskFacade.facade("test", "Maven Project");
-	   TaskFacade.facade("test", "Gradle Project");
-	   TaskFacade.facade("test", "Node JS Project");
-	   TaskFacade.facade("test", "Android Project");
-	   
-	   TaskFacade.facade("debug", "Maven Project");
-	 
-	   TaskFacade.facade("convert", "MP4");
-	
-	   
     }
 }

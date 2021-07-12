@@ -4,7 +4,7 @@ import com.subsystem2.MediaPlayer;
 
 public class TaskFacade {
     public static void doActivity(Task t,String name) {
-    	
+    	System.out.println(t.hashCode());
     	System.out.println("preparing the task..!!!");
     	System.out.println("Setting things ready");
     	System.out.println("Ready steady Go...!!!!");

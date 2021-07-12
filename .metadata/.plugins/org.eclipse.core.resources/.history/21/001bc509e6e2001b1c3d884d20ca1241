@@ -1,8 +1,8 @@
 package com.demo2;
 
 import com.subsystem.Activity;
+import com.subsystem.Building;
 import com.subsystem.Debugging;
-import com.subsystem.FastBuild;
 import com.subsystem.Testing;
 import com.subsystem2.Convert;
 
@@ -13,7 +13,7 @@ public class TaskFactory {
     	   default:
     		     return null;
     	   case "build":
-    		      return new FastBuild();
+    		      return new FastBuilding();
     	   case  "test":
     		      return new Testing();
     	   case "debug":

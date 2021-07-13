@@ -1,6 +1,6 @@
 package com.demo2;
 
-import com.subsystem2.MediaPlayer;
+import com.subsystem.Activity;
 
 public class TaskFacade {
     public static void doActivity(Task t,String name) {
@@ -15,6 +15,8 @@ public class TaskFacade {
     }
     
     public static void facade(String activity,String name) {
-       doActivity(TaskFactory.getInstance(activity)::activity, name); 
+       Activity temp=	TaskFactory.getInstance(activity);
+       System.out.println("Hash code "+temp.hashCode());
+       doActivity(temp::activity, name); 
     }
 }

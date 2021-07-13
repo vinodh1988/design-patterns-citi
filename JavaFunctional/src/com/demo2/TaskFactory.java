@@ -8,18 +8,27 @@ import com.subsystem2.Convert;
 
 //Factory pattern
 public class TaskFactory {
+	//Singleton implementation
+	private final static FastBuild build=new FastBuild();
+	private final static Testing test=new Testing();
+	private final static Debugging debug=new Debugging();
+	private final static Convert convert=new Convert();
+			
+	static {
+		System.out.println("Loaded....");
+	}
     public static Activity getInstance(String task) {
     	switch(task) {
     	   default:
     		     return null;
     	   case "build":
-    		      return new FastBuild();
+    		      return build;
     	   case  "test":
-    		      return new Testing();
+    		      return test;
     	   case "debug":
-    		   	  return new Debugging();
+    		   	  return debug;
     	   case  "convert":
-    		      return new Convert();
+    		      return convert;
     	}
     }
 }

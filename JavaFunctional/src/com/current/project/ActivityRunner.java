@@ -12,7 +12,7 @@ public class ActivityRunner {
 	   TaskFacade.facade("build", "Android Project");
 	   
 	   TaskFacade.facade("test", "Maven Project");
-	   TaskFacade.facade("test", "Gradle Project");
+	   TaskFacade.facade("test", "Gradle Service");
 	   TaskFacade.facade("test", "Node JS Project");
 	   TaskFacade.facade("test", "Android Project");
 	   

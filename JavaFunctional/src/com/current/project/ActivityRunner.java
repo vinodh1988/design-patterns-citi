@@ -20,6 +20,10 @@ public class ActivityRunner {
 	 
 	   TaskFacade.facade("convert", "MP4");
 	
+	   TaskFacade.facade("github","Commit all my project code");
+	   TaskFacade.facade("bitbucket","Commit all the changes maded in feature1 branch");
+	   
+	   TaskFacade.facade("jenkins", "Invoke the build pipeline");
 	   
     }
 }

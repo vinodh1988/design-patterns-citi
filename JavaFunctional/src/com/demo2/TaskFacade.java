@@ -15,8 +15,8 @@ public class TaskFacade {
     }
     
     public static void facade(String activity,String name) {
-       Activity temp=	TaskFactory.getInstance(activity);
-       System.out.println("Hash code "+temp.hashCode());
-       doActivity(temp::activity, name); 
+       //Activity temp=	TaskFactory.getInstance(activity);
+       //System.out.println("Hash code "+temp.hashCode());
+       doActivity(TaskFactory.getInstance(activity)::activity, name); 
     }
 }

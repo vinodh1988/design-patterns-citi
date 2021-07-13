@@ -1,5 +1,6 @@
 package com.demo2;
 
+import com.adapter.DevopsAdapter;
 import com.subsystem.Activity;
 import com.subsystem.Debugging;
 import com.subsystem.FastBuild;
@@ -29,6 +30,11 @@ public class TaskFactory {
     		   	  return debug;
     	   case  "convert":
     		      return convert;
+    	   case "azure": case "azurerepos": case "github": case "jenkins": case "bitbucket":
+    		      return new DevopsAdapter(task);
     	}
+    	
     }
+    
+   
 }

@@ -11,6 +11,7 @@ public class Test implements Task{
 		// TODO Auto-generated method stub
 		
 		t.doit();
+		
 		System.out.println("Testing the application");
 		
 	}

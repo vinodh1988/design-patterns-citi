@@ -11,6 +11,7 @@ public class Pack implements Task {
 			// TODO Auto-generated method stub
 		
 			t.doit();
+			
 			System.out.println("Packing the application");
 			
 		}

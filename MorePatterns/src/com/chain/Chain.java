@@ -1,5 +1,5 @@
 package com.chain;
-
+//chain of responsibilities
 public class Chain {
    
 	public static void release() {

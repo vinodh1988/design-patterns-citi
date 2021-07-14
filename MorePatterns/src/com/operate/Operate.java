@@ -25,6 +25,8 @@ public class Operate {
 		team.addTeam(dev2);
 		team.addTeam(dev3);
 		team.addTeam(operations1);
+		team.addTeam(ObjectProvider.getPrototype(team1));
+		team.addTeam(ObjectProvider.getPrototype(dev3));
 		
 		team.perform();
 		

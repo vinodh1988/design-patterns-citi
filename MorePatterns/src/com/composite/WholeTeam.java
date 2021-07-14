@@ -19,6 +19,7 @@ public class WholeTeam implements Team{
 	   System.out.println(name+ " The organization with "+teamcount+ " Employees "+ "is operating");
    	
        for(Team x:teams) {
+    
     	   x.perform();
        }
    }
@@ -26,4 +27,22 @@ public class WholeTeam implements Team{
    public void addTeam(Team m) {
 	   teams.add(m);
    }
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public Integer getTeamcount() {
+	return teamcount;
+}
+
+public void setTeamcount(Integer teamcount) {
+	this.teamcount = teamcount;
+}
+   
+   
 }
